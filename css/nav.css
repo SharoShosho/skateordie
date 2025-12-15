@@ -1,0 +1,38 @@
+.navbarstyle {
+    display: flex;
+    align-items: center;       /* vertikal centrering */
+    gap: 2%;                 /* avstånd mellan nav och header */
+    height: auto;             /* höjd på nav-baren */
+    padding: 0 2%;
+    background-color: black;
+    border-bottom: 2px solid white; /* <--- här skapar vi strecket */
+}
+
+.navbarstyle .header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: cornflowerblue;
+    font-size: 4vw;
+    line-height: 1;
+}
+
+.navbarstyle ul {
+    list-style: none;
+    display: flex;             /* lägger länkarna på rad */
+    gap: 5%;
+    padding: 0;
+    padding-left: 50px;
+    margin: 0;
+}
+
+.navbarstyle a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease; /* gör hover-effekten mjuk */
+}
+
+.navbarstyle a:hover{
+    transform: scale(1.1);
+    background-color: aliceblue;
+    color: black;
+}

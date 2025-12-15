@@ -8,6 +8,17 @@
     <script src="../js/javaScript.js" defer></script>
 </head>
 <body>
-    <h1>Skate Or Die</h1>
+    <div id="navbar"></div>
+
+  <script>
+    fetch('nav.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      });
+  </script>
+  <div class="midElement">
+    <img src="/assets/images/skateOrDie-midelement.jpg" alt="skateOrDie-midelement" width="300">
+  </div>
 </body>
 </html>
